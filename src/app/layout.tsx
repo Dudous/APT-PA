@@ -3,9 +3,8 @@ import localFont from "next/font/local";
 import { Roboto } from "next/font/google"
 
 //imports internos
-import "./globals.css";
+import "@/app/globals.css";
 import { Menu } from "@/components/menu";
-import medina from "@/assets/medina.png"
 
 const roboto = Roboto({
   weight: ["100", "400", "900"],
@@ -33,8 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased bg-[url(${medina})]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
       >
+        <Menu op1="batata frita" op2="batata assada" op3={false} op4={10}></Menu>
         {children}
       </body>
     </html>
