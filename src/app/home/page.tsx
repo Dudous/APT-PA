@@ -20,7 +20,6 @@ export default function Home() {
         </form>
       </section>
       </div>
-      {/* <Footer roda="Jequiti" pe={15.5}></Footer> */}
     </>
   );
 }

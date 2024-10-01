@@ -10,6 +10,14 @@ const nextConfig = {
             {
                 source: "/matematicas",
                 destination: "/maths"
+            },
+            {
+                source: "/geral",
+                destination: "/general-function"
+            },
+            {
+                source: "/cartoes",
+                destination: "/cards"
             }
         ]
     }
