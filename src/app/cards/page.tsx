@@ -3,7 +3,9 @@
 const Cards:React.FC = () => {
     return(
         <>
-            <h1>Cartão</h1>
+            <div className="flex w-screen">
+
+            </div>
         </>
     )
 }
