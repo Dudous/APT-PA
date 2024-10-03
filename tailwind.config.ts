@@ -24,8 +24,9 @@ const config: Config = {
         "2lg": "1920px"
       },
       backgroundImage: {
-          'medina': "./src/assets/medina.png" 
-      },
+          'medina': "./src/assets/medina.png" ,
+          gradiente: "conic-gradient(at 70% -10%, white, black,#303030,#303030, black, white)"
+      }
     },
   },
   plugins: [],
