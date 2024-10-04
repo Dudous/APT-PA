@@ -9,9 +9,12 @@ interface IMenu {
     op2: string;
     op3?: string;
     op4: string;
+    op5: string;
+    op6: string;
+    op7: string;
 }
 
-export const Menu: React.FC<IMenu> = ({op1, op2, op3, op4}) => {
+export const Menu: React.FC<IMenu> = ({op1, op2, op3, op4, op5, op6, op7}) => {
 
     const [navBar, setNavBar] = useState<boolean>(false)
     const navHandler = () => {
@@ -37,6 +40,9 @@ export const Menu: React.FC<IMenu> = ({op1, op2, op3, op4}) => {
                     <Link href={ROUTES.maths}><p className="bg-blue-500 w-48 px-2 py-1 text-branco my-2 rounded cursor-pointer flex justify-center">{op2}</p></Link>
                     <Link href={ROUTES.generalFunction}><p className="bg-blue-500 w-48 px-2 py-1 text-branco my-2 rounded cursor-pointer flex justify-center">{op3}</p></Link>
                     <Link href={ROUTES.cards}><p className="bg-blue-500 w-48 px-2 py-1 text-branco my-2 rounded cursor-pointer flex justify-center">{op4}</p></Link>
+                    <Link href={ROUTES.fetchNativo}><p className="bg-blue-500 w-48 px-2 py-1 text-branco my-2 rounded cursor-pointer flex justify-center">{op5}</p></Link>
+                    <Link href={ROUTES.fetchAxios}><p className="bg-blue-500 w-48 px-2 py-1 text-branco my-2 rounded cursor-pointer flex justify-center">{op6}</p></Link>
+                    <Link href={ROUTES.serverPage}><p className="bg-blue-500 w-48 px-2 py-1 text-branco my-2 rounded cursor-pointer flex justify-center">{op7}</p></Link>
                 </div>
             </div>
         </nav>
